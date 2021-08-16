@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="12dp"
-    app:cardCornerRadius="6dp"
-    app:cardElevation="4dp">
+    app:cardCornerRadius="6dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_launcher_background" />
+                tools:src="@drawable/ic_launcher_background" />
 
         </androidx.cardview.widget.CardView>
 
@@ -36,9 +36,9 @@
             android:layout_alignTop="@id/card_view_project_icon_container"
             android:layout_toEndOf="@+id/card_view_project_icon_container"
             android:fontFamily="sans-serif-medium"
-            android:text="hello pirate slug"
-            android:textSize="18sp"
-            android:textColor="#222222" />
+            tools:text="hello pirate slug"
+            android:textColor="#222222"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/text_view_project_description"
@@ -46,9 +46,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/text_view_project_title"
             android:layout_marginTop="4dp"
-            android:fontFamily="sans-serif-light"
             android:layout_toEndOf="@id/card_view_project_icon_container"
-            android:text="This is a discription of the pirate" />
+            android:fontFamily="sans-serif-light"
+            tools:text="This is a discription of the pirate" />
 
     </RelativeLayout>
 
